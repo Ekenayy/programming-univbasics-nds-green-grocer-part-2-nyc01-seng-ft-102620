@@ -13,7 +13,7 @@ def apply_coupons(cart, coupons)
         #cart_item[:count] = new_count
         if coupon_item[:item] + " W/COUPON" === cart_item[:item]
           cart_item[:count] += coupon_item[:num]
-          cart_item[]
+          cart_item[count] = new_count
         else 
         cart << {:item => cart_item[:item] + " W/COUPON",
         :price => (coupon_item[:cost] / coupon_item[:num]),
