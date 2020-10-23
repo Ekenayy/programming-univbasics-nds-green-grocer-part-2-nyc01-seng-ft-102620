@@ -71,7 +71,7 @@ def checkout(cart, coupons)
   final_price = final_price_array.reduce(:+)
   
   if final_price > 100
-    final_price = (final_price * 0.80).round(2)
+    final_price = (final_price * 0.90).round(2)
   end 
   binding.pry
   
